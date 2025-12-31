@@ -19,7 +19,7 @@ Sync Sourcecode
 
 
 ```shell
-repo init -u https://github.com/Miku-UI/manifesto -b Blooming --git-lfs
+repo init -u https://github.com/Miku-UI-fork/manifesto -b Blooming --git-lfs
 ```
 
 

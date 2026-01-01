@@ -21,7 +21,7 @@
   <project path="bionic" name="platform_bionic" remote="miku" />
 
   <!-- Build -->
-  <project path="build/make" name="platform_build" remote="rem" >
+  <project path="build/make" name="platform_build" remote="miku" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -31,7 +31,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/release" name="platform_build_release" remote="miku" />
-  <project path="build/soong" name="platform_build_soong" remote="rem" >
+  <project path="build/soong" name="platform_build_soong" remote="miku" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -145,7 +145,7 @@
   <!-- Hardware -->
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="miku" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="miku" />
-  <project path="hardware/miku/compat" name="platform_hardware_miku_compat" remote="miku" />
+  <project path="hardware/miku/compat" name="platform_hardware_miku_compat" remote="rem" />
 
   <!-- KernelSU -->
   <project path="kernel/KernelSU" name="platform_kernel_KernelSU" remote="miku" />

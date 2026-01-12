@@ -10,7 +10,7 @@
 	   revision="vic"
 	   fetch="https://gitlab.com/MindTheGapps" />
 	
- <remote  name="rem"
+ <remote  name="joker"
 	   revision="Blooming"
 	   fetch="https://github.com/Miku-UI-fork" />
 	
@@ -21,7 +21,7 @@
   <project path="bionic" name="platform_bionic" remote="miku" />
 
   <!-- Build -->
-  <project path="build/make" name="platform_build" remote="rem" >
+  <project path="build/make" name="platform_build" remote="joker" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -31,7 +31,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/release" name="platform_build_release" remote="miku" />
-  <project path="build/soong" name="platform_build_soong" remote="rem" >
+  <project path="build/soong" name="platform_build_soong" remote="joker" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -110,7 +110,7 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="miku" revision="snowland" clone-depth="1" />
 
   <!-- General -->
-  <project path="vendor/miku" name="platform_vendor_miku" remote="rem" />
+  <project path="vendor/miku" name="platform_vendor_miku" remote="joker" />
   <project path="vendor/settings" name="platform_vendor_settings" remote="miku" revision="snowland" />
 
   <!-- HALS -->
